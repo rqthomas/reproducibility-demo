@@ -1,7 +1,7 @@
 # Challenges with reproducing analyses
 
-1.  Data is not available
-2.  Data is in a format that is not readable (Lotus123 spreadsheet?)
+1.  Data are not available
+2.  Data are in a format that is not readable (Lotus123 spreadsheet?)
 3.  Code is not available to run analysis (only the method section is available)
 4.  Correct software is not available to read data or run analysis (i.e, \|\> requires R version 4.1 or higher)
 5.  R packages used in analysis have changed and are not backward compatible (how long will dplyr support spread and gather?)
@@ -87,12 +87,12 @@ docker run --rm -ti -e PASSWORD=yourpassword -p 8787:8787 thomas_demo:latest
 -   Is there a clear step for downloading data that works?
 -   Are custom function in an R subdirectory?
 -   Is there extra code that isn't used in the analysis
--   Is there a ton of commented out code in the analysis script that others will be looking at?
--   Does the Readme list the authors and manuscript title?
+-   Is there a ton of commented-out code in the analysis script that others will be looking at? That should be cleaned up!
+-   Does the Readme list the authors and manuscript title? Does it have a license? (GNU General Public License v2.0 is one that may be appropriate, see: https://www.cmu.edu/cttec/forms/opensourcelicensegridv1.pdf)
 -   Is there repeated code that should be in functions?
--   Are single use function in R subdirectory that would be better in the main analysis script for improving read ability?
+-   Are there single-use functions in R subdirectory that would be better in the main analysis script for improving read ability?
 
-5.  If you find any issues that you can fix, fix them in the code
+5.  If you find any issues that you can fix, fix them in the code!
 
 6.  Commit and Push the updates to your fork.  If you are using a Docker container you will need to set up your GitHub credentials on the container following: <https://github.com/frec-3044/git-rmd-intro-template/blob/main/assignment/instructions.md>
 
@@ -100,7 +100,7 @@ docker run --rm -ti -e PASSWORD=yourpassword -p 8787:8787 thomas_demo:latest
 
 # Guidelines when requesting a code review from a collaborator
 
-Consider that requesting a collaborator to review your code is similar to asking that person to review a manuscript. As a result, similar to when you are drafting a manuscript, it's best practice to make sure your code is well-organized, concise, and generally interpretable by someone else before you ask for a review. Below are provided a few guidelines to consider when requesting a code review from a collaborator.
+Consider that requesting a collaborator to review your code is similar to asking that person to review a manuscript. As a result, similar to when you are drafting a manuscript, it's best practice to make sure your code is well-organized, concise, and generally interpretable by someone else before you ask for a review, as a professional courtesy. Below are provided a few guidelines to consider when requesting a code review from a collaborator.
 
 1. **Clarify your review objectives when you request a review.** Is your primary objective merely to ensure that the code runs with no errors? Or are there sections of it that you would like the reviewer to screen more carefully, such as a particular analysis that you want to make sure is free of mistakes? Again, similar to when you request a manuscript review, giving the reviewer some guidance about the type of feedback you are seeking can both make the reviewer's life simpler and help you accomplish your goals.
 
